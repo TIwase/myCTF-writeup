@@ -18,6 +18,6 @@ http://jupiter.challenges.picoctf.org:19593/filter.php
 
 ### Solution:
 #### Round 1/5
-![sample Image](../../../../sozai/round1.png)
+![sample Image](images/round1.png)
 filter.phpに```Round1: or```と記載されており、ORが使えない。  
 シングルクォートとハイフンを使用してログインをする。

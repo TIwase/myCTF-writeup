@@ -10,7 +10,7 @@ The flag is in the format PICOCTF{}
 
 ## Solution:
 URL先のpngファイルを開くと、flagの文字列が数字で表示されている。
-数字[1-26]をアルファベット[A-Z]に置換する。
+数字[1-26]をアルファベット[A-Z]に置換してflagを取得。
 
 # [Crypto] caesar - 100 points
 
@@ -23,6 +23,9 @@ caesar cipher [tutorial](https://learncryptography.com/classical-encryption/caes
 ## Solution:
 URL先のテキストファイル```ciphertext```を開く
 
+	$ file ciphertext
+	ciphertext: ASCII text, with no line terminators
+	$
 	$ cat ciphertext
 	picoCTF{dspttjohuifsvcjdpoabrkttds}
 

@@ -31,7 +31,7 @@ Decode this [message](https://jupiter.challenges.picoctf.org/static/d6fcea5e3c64
 ## Solution:
 
 この音声ファイルはSlow Scan Television (SSTV)と呼ばれる、画像を音声として無線信号を送る方式を利用したものである。  
-ここでは[RX-SSTV](http://users.belgacom.net/hamradio/rxsstv.htm)といのSSTVソフトウェアを使って画像を復元してみる。ちなみに上記2番目のHintsよりCMUのマスコットキャラクターはScottieなので、RX optionをScottie 1に設定して音声->画像変換を試みる。
+ここでは[RX-SSTV](http://users.belgacom.net/hamradio/rxsstv.htm)というSSTVソフトウェアを使って画像を復元してみる。ちなみに上記2番目のHintsよりCMUのマスコットキャラクターはScottieなので、RX optionをScottie 1に設定して音声->画像変換を試みる。
 
 
 ![m00nwalk.png](images/m00nwalk.png)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-import angr, claripy
+import angr
 
-p = angr.Project("./yakisoba")
+p = angr.Project("../file/yakisoba")
 state = p.factory.entry_state()
 simgr = p.factory.simulation_manager(state)
 

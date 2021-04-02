@@ -1,4 +1,4 @@
-#### ì¬“ú: 2021/01/09
+#### ä½œæˆæ—¥: 2021/01/09
 
 # [Crypto] The Numbers - 50 points
 
@@ -9,8 +9,8 @@ The [numbers](https://jupiter.challenges.picoctf.org/static/f209a32253affb6f547a
 The flag is in the format PICOCTF{}
 
 ## Solution:
-URLæ‚Ìpngƒtƒ@ƒCƒ‹‚ğŠJ‚­‚ÆAflag‚Ì•¶š—ñ‚ª”š‚Å•\¦‚³‚ê‚Ä‚¢‚éB
-”š[1-26]‚ğƒAƒ‹ƒtƒ@ƒxƒbƒg[A-Z]‚É’uŠ·‚µ‚Äflag‚ğæ“¾B
+URLå…ˆã®pngãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãã¨ã€flagã®æ–‡å­—åˆ—ãŒæ•°å­—ã§è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ã€‚
+æ•°å­—[1-26]ã‚’ã‚¢ãƒ«ãƒ•ã‚¡ãƒ™ãƒƒãƒˆ[A-Z]ã«ç½®æ›ã—ã¦flagã‚’å–å¾—ã€‚
 
 # [Crypto] caesar - 100 points
 
@@ -21,7 +21,7 @@ Decrypt this [message](https://jupiter.challenges.picoctf.org/static/6385b895dcb
 caesar cipher [tutorial](https://learncryptography.com/classical-encryption/caesar-cipher)
 
 ## Solution:
-URLæ‚ÌƒeƒLƒXƒgƒtƒ@ƒCƒ‹```ciphertext```‚ğŠJ‚­
+URLå…ˆã®ãƒ†ã‚­ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«```ciphertext```ã‚’é–‹ã
 
 	$ file ciphertext
 	ciphertext: ASCII text, with no line terminators
@@ -29,13 +29,13 @@ URLæ‚ÌƒeƒLƒXƒgƒtƒ@ƒCƒ‹```ciphertext```‚ğŠJ‚­
 	$ cat ciphertext
 	picoCTF{dspttjohuifsvcjdpoabrkttds}
 
-ƒV[ƒU[ˆÃ†‚ÍŠe•¶š‚É‘Î‚µ‚Ä”•¶šƒVƒtƒg‚·‚é‚à‚Ì‚È‚Ì‚ÅAƒvƒƒOƒ‰ƒ€‚ğì¬‚µ‚Äflag‚ğ’²‚×‚Ä‚İ‚éB
-‚±‚±‚Å‚ÍAasciiƒR[ƒh‚ğ—p‚¢‚Ä‘S•¶š”ƒVƒtƒg‚³‚¹‚½Œ‹‰Ê‚ğo—Í‚³‚¹‚éB
+ã‚·ãƒ¼ã‚¶ãƒ¼æš—å·ã¯å„æ–‡å­—ã«å¯¾ã—ã¦æ•°æ–‡å­—ã‚·ãƒ•ãƒˆã™ã‚‹ã‚‚ã®ãªã®ã§ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½œæˆã—ã¦flagã‚’èª¿ã¹ã¦ã¿ã‚‹ã€‚
+ã“ã“ã§ã¯ã€asciiã‚³ãƒ¼ãƒ‰ã‚’ç”¨ã„ã¦å…¨æ–‡å­—æ•°ã‚·ãƒ•ãƒˆã•ã›ãŸçµæœã‚’å‡ºåŠ›ã•ã›ã‚‹ã€‚
 
 [CaesarCipher.py](solver/CaesarCipher.py)
 
 
-‰º‹LƒRƒ}ƒ“ƒh‚ÅpythonÀs
+ä¸‹è¨˜ã‚³ãƒãƒ³ãƒ‰ã§pythonå®Ÿè¡Œ
 
 	$ python3 CaesarCipher.py dspttjohuifsvcjdpoabrkttds  
 	GAP = 0 :  
@@ -89,4 +89,4 @@ URLæ‚ÌƒeƒLƒXƒgƒtƒ@ƒCƒ‹```ciphertext```‚ğŠJ‚­
 	GAP = 24 :  
 	furvvlqjwkhuxelfrqcdtmvvfu  
 
-ÀsŒ‹‰Ê‚æ‚èAGAP:1‚Ìo—Í‚ªflag
+å®Ÿè¡Œçµæœã‚ˆã‚Šã€GAP:1ã®å‡ºåŠ›ãŒflag
